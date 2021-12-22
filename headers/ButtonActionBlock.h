@@ -6,6 +6,7 @@ class ButtonActionBlock: public Button{
 
 public:
 
+	ButtonActionBlock(std::string n) : Button(n) {}
 	Signal push();
 
 };

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>P:\D\Programming\Intercom\headers\</FILEPATH>
+      <FILENAME>Signal.h</FILENAME>
+      <LINE>22</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Переменная "Signal::type_signal" не инициализирована. Всегда инициализируйте переменную-член (type.6).</DESCRIPTION>
+    <FUNCTION>Signal::{ctor}</FUNCTION>
+    <DECORATED>??0Signal@@QAE@XZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Signal::type_signal</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>P:\D\Programming\Intercom\headers\</FILEPATH>
+      <FILENAME>Signal.h</FILENAME>
+      <LINE>22</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Переменная "Signal::id" не инициализирована. Всегда инициализируйте переменную-член (type.6).</DESCRIPTION>
+    <FUNCTION>Signal::{ctor}</FUNCTION>
+    <DECORATED>??0Signal@@QAE@XZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Signal::id</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>P:\D\Programming\Intercom\headers\</FILEPATH>
+      <FILENAME>Signal.h</FILENAME>
+      <LINE>22</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>Тип перечисления "Type_s" не входит в область. Старайтесь использовать "enum class" вместо "enum" (Enum.3).</DESCRIPTION>
+    <FUNCTION>Signal::{ctor}</FUNCTION>
+    <DECORATED>??0Signal@@QAE@ABU0@@Z</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

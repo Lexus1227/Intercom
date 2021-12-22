@@ -13,7 +13,7 @@ private:
 
 public:
 
-	ButtonActionSymbol(std::string _symbol) : symbol(_symbol) {};
+	ButtonActionSymbol(std::string n, std::string _symbol) : Button(n), symbol(_symbol) {};
 
 	Signal push();
 

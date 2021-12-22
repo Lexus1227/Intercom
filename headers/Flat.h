@@ -7,7 +7,7 @@ class Flat{
 private:
 
 	 std::string flat_number;
-	 IntercomFlat intercom_f;
+	 IntercomFlat* intercom_f;
 
 public:
 

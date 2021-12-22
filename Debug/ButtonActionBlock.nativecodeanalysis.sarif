@@ -1,0 +1,367 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Переменная \"Signal::type_signal\" не инициализирована. Всегда инициализируйте переменную-член (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///P:/D/Programming/Intercom/headers/Signal.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1,
+                  "endLine": 22,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Signal::{ctor}",
+                  "decoratedName": "??0Signal@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Signal::type_signal"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Переменная \"Signal::id\" не инициализирована. Всегда инициализируйте переменную-член (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///P:/D/Programming/Intercom/headers/Signal.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1,
+                  "endLine": 22,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Signal::{ctor}",
+                  "decoratedName": "??0Signal@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Signal::id"
+          }
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "Тип перечисления \"Type_s\" не входит в область. Старайтесь использовать \"enum class\" вместо \"enum\" (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///P:/D/Programming/Intercom/headers/Signal.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1,
+                  "endLine": 22,
+                  "endColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Signal::{ctor}",
+                  "decoratedName": "??0Signal@@QAE@$$QAU0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.30.30706.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "D:\\Programms\\VS2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX86\\x86\\c1xx.dll -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x008BE1C0 -il C:\\Users\\Vlad\\AppData\\Local\\Temp\\_CL_6459cbc5ast -typedil -f src\\ButtonActionBlock.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1930 -D_MSC_FULL_VER=193030706 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I P:\\D\\Programming\\Intercom\\headers -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -std:c++latest -permissive- -FoDebug\\ButtonActionBlock.obj -FdDebug\\vc143.pdb -external:W 3 -Gd -analyze:projectdirectory P:\\D\\Programming\\Intercom -analyze:rulesetdirectory ;D:\\Programms\\VS2022\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset D:\\Programms\\VS2022\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin D:\\Programms\\VS2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I D:\\Programms\\VS2022\\VC\\Tools\\MSVC\\14.30.30705\\include -I D:\\Programms\\VS2022\\VC\\Tools\\MSVC\\14.30.30705\\atlmfc\\include -I D:\\Programms\\VS2022\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I P:\\D\\Programming\\Intercom\\Include\\um -external:I D:\\Programms\\VS2022\\VC\\Tools\\MSVC\\14.30.30705\\include -I D:\\Programms\\VS2022\\VC\\Tools\\MSVC\\14.30.30705\\include -external:I D:\\Programms\\VS2022\\VC\\Tools\\MSVC\\14.30.30705\\atlmfc\\include -I D:\\Programms\\VS2022\\VC\\Tools\\MSVC\\14.30.30705\\atlmfc\\include -external:I D:\\Programms\\VS2022\\VC\\Auxiliary\\VS\\include -I D:\\Programms\\VS2022\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I P:\\D\\Programming\\Intercom\\Include\\um -I P:\\D\\Programming\\Intercom\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///P:/D/Programming/Intercom/headers/Signal.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b7e352b47ecccd41e1f2a16df70016ad2be521c5ff052e04eb968a387493ade5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///P:/D/Programming/Intercom/headers/Flat.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "d7a96107e55f81a846686155d82d0b7902b0c62d0fd67bffbe5001b811d8349f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/porch.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "bf3575410119847a71be1066114c761429a92393675ae71e9a9a044f276e5b13"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/porch.h"
+          },
+          "hashes": {
+            "sha-256": "4baaf0a81c3002b14dcd8ae1df5384c729d57132eb0a88c4c15615e901c48952"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/door.h"
+          },
+          "hashes": {
+            "sha-256": "2d142dc6ca22c7ea24af0d5333c003dc1599e5786b51c82e5636a24dc0abf2d0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/intercomflat.h"
+          },
+          "hashes": {
+            "sha-256": "2fbd1b9871072eeded77a388ada801943dc0b86ae5d66afd8c8850acf8730f7b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/intercom.h"
+          },
+          "hashes": {
+            "sha-256": "b147a9ee7a6e3b93de7a2b2493def63c830d1168189d645f3ec3c79eb29d1561"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/button.h"
+          },
+          "hashes": {
+            "sha-256": "74e2c3ff59d0c671800242def64887baad3e846a271ca4771ae64fceaf66a1b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/journal.h"
+          },
+          "hashes": {
+            "sha-256": "e577da2c4c71b6583fab16782b668c0734428d6a73090a729fbe9c96cb69c64e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/buttonactionopen.h"
+          },
+          "hashes": {
+            "sha-256": "4c2f7990bbc867d55cb188533345adf6fd893341a88c9e6cf57d2d4a70b60047"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/buttonactionblock.h"
+          },
+          "hashes": {
+            "sha-256": "4359cddabd579e00282dbad941d1ca4f0271473af30d81045a8a5cd6fd70b53c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/buttonactionradioconnection.h"
+          },
+          "hashes": {
+            "sha-256": "8f9472b385f042ddfa9abe74b8f9e48a86e1d014186eb6b16c675a117d0ea3df"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/buttonactionsymbol.h"
+          },
+          "hashes": {
+            "sha-256": "f38d25adc5e0efcf0de49f72af85950d725100c53ce5f561d6b65dc10f01c310"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/journal.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "1dbd1f894d7a4d841f43495b2fc35e00a5ff22ba0a54ee62a1a9daf2c0e3abf5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/intercomporch.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "32ce68196529f34549cd248a620c4afa9ab3b29809936261eec7ac9d862cc798"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/intercomporch.h"
+          },
+          "hashes": {
+            "sha-256": "fc5cdbdf98d82c7f863f36353a7a0b250bc29741eeb7497ab06945c632728d0e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/intercomflat.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "745d6a487a4fb0b6cd0a98d07d23059b0bcd2aebca4887227e2e13ea4ff8923b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///P:/D/Programming/Intercom/src/Intercom.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "cf1ea1327182126dd201bb28410605976403f2e9d7d2b82970ef582773888609"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/home.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "727b63897bed548933b0bb4bf916ed54be035eab863b4764891d3669841bbb0a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/headers/home.h"
+          },
+          "hashes": {
+            "sha-256": "1d63544f1b2b33b8017d5ad8c43316cc1e5533bebb548cd8d3ccea4b5c1cb551"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/flat.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "437ca176bfd98f810f3ec6bdd308d507502976b7867d945f9f704105dc153002"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/door.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "0a880a807a8de84e4351d992192a1b8bc0fe5d3cb64a6f2837317f5c377ecd16"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/buttonactionsymbol.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "2436f7d448367450a5eafaff7f7662f8b1732c4f0ea8ac6da8dbc1590a00f855"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/buttonactionradioconnection.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "72819f97e60e3107f59b44b3b930932802205fcccd672e273886ca24c2be797e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/buttonactionopen.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "aa60536f37eafdf21af5e4705807be6f6a2d84c2e804475f99f1bf2cae1bebb8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///p:/d/programming/intercom/src/buttonactionblock.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e7909c0e44e1de6ecdd9e46efbe6ca79d3c2a1d70c2ce8c0f374481628d91888"
+          }
+        }
+      ]
+    }
+  ]
+}

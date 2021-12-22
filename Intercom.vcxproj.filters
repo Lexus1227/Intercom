@@ -15,93 +15,93 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\ButtonActionBlock.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="ButtonActionRadioconnection.cpp">
+    <ClCompile Include="src\ButtonActionOpen.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="ButtonActionOpen.cpp">
+    <ClCompile Include="src\ButtonActionRadioconnection.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="ButtonActionBlock.cpp">
+    <ClCompile Include="src\ButtonActionSymbol.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="ButtonActionSymbol.cpp">
+    <ClCompile Include="src\Door.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Home.cpp">
+    <ClCompile Include="src\Flat.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Porch.cpp">
+    <ClCompile Include="src\Home.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Door.cpp">
+    <ClCompile Include="src\Intercom.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Flat.cpp">
+    <ClCompile Include="src\IntercomFlat.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Intercom.cpp">
+    <ClCompile Include="src\IntercomPorch.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="IntercomFlat.cpp">
+    <ClCompile Include="src\Journal.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Journal.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="IntercomPorch.cpp">
+    <ClCompile Include="src\Porch.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Linker.cpp">
+    <ClCompile Include="src\Orcestrator.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Button.h">
+    <ClInclude Include="headers\Button.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="ButtonActionRadioconnection.h">
+    <ClInclude Include="headers\ButtonActionBlock.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="ButtonActionOpen.h">
+    <ClInclude Include="headers\ButtonActionOpen.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="ButtonActionBlock.h">
+    <ClInclude Include="headers\ButtonActionRadioconnection.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Intercom.h">
+    <ClInclude Include="headers\ButtonActionSymbol.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="ButtonActionSymbol.h">
+    <ClInclude Include="headers\Door.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Home.h">
+    <ClInclude Include="headers\Flat.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Porch.h">
+    <ClInclude Include="headers\Home.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Door.h">
+    <ClInclude Include="headers\Intercom.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Flat.h">
+    <ClInclude Include="headers\IntercomFlat.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Signal.h">
+    <ClInclude Include="headers\IntercomPorch.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="IntercomFlat.h">
+    <ClInclude Include="headers\Journal.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Journal.h">
+    <ClInclude Include="headers\Porch.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="IntercomPorch.h">
+    <ClInclude Include="headers\Signal.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Linker.h">
+    <ClInclude Include="headers\Orcestrator.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

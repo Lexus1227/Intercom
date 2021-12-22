@@ -1,19 +1,85 @@
 #pragma once
 #include "Signal.h"
+#include "Button.h"
+#include "Journal.h"
+#include "Door.h"
+#include <map>
+#include <thread>
+
+
+void set_false_after_timing(bool& var, float s);
+
 
 class Intercom{
 
 private:
 
+	ID id;
+	Journal* journal;
+	Intercom* conn = nullptr;
+	Door* door;
+	std::map<char, Button*> buttons;
+
+	std::string cur;
+
+
 	virtual void open();
 	virtual void connect();
 	virtual void call(std::string m);
 	virtual void block();
-	virtual void symb();
+	virtual void symb(std::string);
+
+protected:
+	bool trying_to_connect = false;
+	bool connection = false;
 
 
 public:
+	
+	Intercom(ID i, Door* d, Journal* j, Intercom* _conn = nullptr) : id(i), door(d), journal(j), conn(_conn) {}
 
+	void add_action(Signal s) {
+
+		this->journal->add_action(s);
+
+	}
+
+	Button* get_button(char c) {
+
+		return this->buttons[c];
+
+	}
+
+	virtual void click(char c) = 0;
+
+	void set_connection(Intercom* _conn) {
+
+		this->conn = _conn;
+
+	}
+
+	ID get_id() {
+
+		return this->id;
+
+	}
+
+	Intercom* get_connection() {
+
+		return this->conn;
+
+	}
+
+	void add_button(char c, Button* b) {
+
+		if (buttons.find(c) != buttons.end()) {
+
+			delete buttons[c];
+
+		}
+		buttons[c] = b;
+
+	}
 
 	 virtual void do_sth(Signal s) final  {
 
@@ -36,17 +102,30 @@ public:
 
 			case SYMBOL:
 
-				this->symb();
+				this->symb(s.message);
 				break;
 
 			case MESSAGE:
 
-				call(s.message);
+				this->call(s.message);
 				break;
 
 		}
 
 	};
+
+	 virtual void show() = 0;
+
+	 ~Intercom() {
+
+		 for (auto& a : buttons) {
+
+			 delete a.second;
+
+		 }
+
+
+	 }
 
 };
 

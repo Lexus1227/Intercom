@@ -20,6 +20,3 @@ struct Signal {
 	std::string message = "";
 
 };
-
-
-

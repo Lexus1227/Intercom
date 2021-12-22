@@ -18,6 +18,39 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ButtonActionBlock.cpp" />
+    <ClCompile Include="src\ButtonActionOpen.cpp" />
+    <ClCompile Include="src\ButtonActionRadioconnection.cpp" />
+    <ClCompile Include="src\ButtonActionSymbol.cpp" />
+    <ClCompile Include="src\Door.cpp" />
+    <ClCompile Include="src\Flat.cpp" />
+    <ClCompile Include="src\Home.cpp" />
+    <ClCompile Include="src\Intercom.cpp" />
+    <ClCompile Include="src\IntercomFlat.cpp" />
+    <ClCompile Include="src\IntercomPorch.cpp" />
+    <ClCompile Include="src\Journal.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Orcestrator.cpp" />
+    <ClCompile Include="src\Porch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\Button.h" />
+    <ClInclude Include="headers\ButtonActionBlock.h" />
+    <ClInclude Include="headers\ButtonActionOpen.h" />
+    <ClInclude Include="headers\ButtonActionRadioconnection.h" />
+    <ClInclude Include="headers\ButtonActionSymbol.h" />
+    <ClInclude Include="headers\Door.h" />
+    <ClInclude Include="headers\Flat.h" />
+    <ClInclude Include="headers\Home.h" />
+    <ClInclude Include="headers\Intercom.h" />
+    <ClInclude Include="headers\IntercomFlat.h" />
+    <ClInclude Include="headers\IntercomPorch.h" />
+    <ClInclude Include="headers\Journal.h" />
+    <ClInclude Include="headers\Orcestrator.h" />
+    <ClInclude Include="headers\Porch.h" />
+    <ClInclude Include="headers\Signal.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -88,6 +121,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>P:\D\Programming\Intercom\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,39 +173,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="ButtonActionBlock.cpp" />
-    <ClCompile Include="ButtonActionOpen.cpp" />
-    <ClCompile Include="ButtonActionRadioconnection.cpp" />
-    <ClCompile Include="ButtonActionSymbol.cpp" />
-    <ClCompile Include="Door.cpp" />
-    <ClCompile Include="Flat.cpp" />
-    <ClCompile Include="Home.cpp" />
-    <ClCompile Include="Intercom.cpp" />
-    <ClCompile Include="IntercomFlat.cpp" />
-    <ClCompile Include="IntercomPorch.cpp" />
-    <ClCompile Include="Journal.cpp" />
-    <ClCompile Include="Linker.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Porch.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Button.h" />
-    <ClInclude Include="ButtonActionBlock.h" />
-    <ClInclude Include="ButtonActionOpen.h" />
-    <ClInclude Include="ButtonActionRadioconnection.h" />
-    <ClInclude Include="ButtonActionSymbol.h" />
-    <ClInclude Include="Door.h" />
-    <ClInclude Include="Flat.h" />
-    <ClInclude Include="Home.h" />
-    <ClInclude Include="Intercom.h" />
-    <ClInclude Include="IntercomFlat.h" />
-    <ClInclude Include="IntercomPorch.h" />
-    <ClInclude Include="Journal.h" />
-    <ClInclude Include="Linker.h" />
-    <ClInclude Include="Porch.h" />
-    <ClInclude Include="Signal.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

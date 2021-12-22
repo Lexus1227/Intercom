@@ -1,17 +1,17 @@
 #pragma once
-class Door{
+class Door {
 
 private:
 
-	bool door_is_open;
+	bool is_open = false;
 
-	void open();
-	void close();
 
 public:
 
-	Door() : door_is_open(false) {};
+	Door() {};
+	void open();
+	void close();
+	bool& exact_value() { return is_open; };
 
 
 };
-
