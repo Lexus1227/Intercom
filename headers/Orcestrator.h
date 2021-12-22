@@ -35,10 +35,6 @@ public:
 			}
 			else {
 
-
-				//google escape последовательность
-				//google экранированироние slash
-
 				main->click(message[0]);
 
 			}

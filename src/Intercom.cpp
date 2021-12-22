@@ -36,9 +36,9 @@ void Intercom::call(std::string m) {
 };
 
 
-void Intercom::block() {
+void Intercom::start_block() {
 
-
+	block = false;
 
 };
 

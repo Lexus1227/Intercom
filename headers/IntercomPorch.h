@@ -27,7 +27,19 @@ public:
 
 	void click(char c) {
 
-		//Signal s = this->
+		Button* b = get_button(c);
+		if (b != nullptr) {
+
+			Signal s = b->push();
+
+			if (c != '*') {
+
+				this->cur += c;
+				return;
+
+			}
+
+		}
 
 	}
 

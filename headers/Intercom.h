@@ -20,18 +20,18 @@ private:
 	Door* door;
 	std::map<char, Button*> buttons;
 
-	std::string cur;
-
 
 	virtual void open();
 	virtual void connect();
 	virtual void call(std::string m);
-	virtual void block();
+	virtual void start_block();
 	virtual void symb(std::string);
 
 protected:
 	bool trying_to_connect = false;
 	bool connection = false;
+	bool block = false;
+	std::string cur;
 
 
 public:
@@ -97,7 +97,7 @@ public:
 
 			case BLOCK:
 
-				this->block();
+				this->start_block();
 				break;
 
 			case SYMBOL:
